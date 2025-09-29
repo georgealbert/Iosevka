@@ -175,11 +175,11 @@ jobs:
           draft: false
           prerelease: false
           body: >
-            针对原版Iosevka字体过于瘦高进行了优化下面的优化：
+            针对原版Iosevka字体过于瘦高进行了下面的优化：
 
-            1. Iosevka字体参考FiraCode风格，调整了i、r、l、t和1、4、0等数字的样式。
+            1. Iosevka字体参考`FiraCode`风格，调整了i、r、l、t和1、4、0等数字的样式。
 
-            2. 加宽英文字体，宽度从默认的`500`增加到`520`，中文相应的从`1000`增加到`1040`，保持等宽。
+            2. 加宽了Iosevka字体，宽度从默认的`500`增加到`520`，中文相应的从`1000`增加到`1040`，保持等宽。
 
             3. Iosevka字体编译时使能`TXTR`特性，即Monaspace字体的`text healing`。
 
