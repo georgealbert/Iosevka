@@ -16,7 +16,7 @@ env:
   FUSION_LICENSE: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
   IOSEVKA_COPYRIGHT: Copyright 2015-2025, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).
   LXGW_COPYRIGHT: Copyright 2021-2024 LXGW (https://github.com/lxgw/LxgwWenKai-Lite) Copyright 2020 The Klee Project Authors (https://github.com/fontworks-fonts/Klee)
-  LXGW_WENKAI_LITE: https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.520/LXGWWenKaiMonoLite-Regular.ttf
+  LXGW_WENKAI_LITE: https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.521/LXGWWenKaiMonoLite-Regular.ttf
 
 jobs:
   build:
