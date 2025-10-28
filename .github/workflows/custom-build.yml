@@ -189,6 +189,8 @@ jobs:
             5. 中英文合并字体是[${{ env.FUSION_ID }}-Regular.ttf](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ env.NOW }}/${{ env.FUSION_ID }}-Regular.ttf)。
 
             ![IosevkaTermSS05NFM+LXGWWenKaiMonoLite-Regular-demo](https://github.com/georgealbert/MyNerdFonts/blob/main/screenshots/IosevkaTermSS05NFM%2BLXGWWenKaiMonoLite-Regular-demo.png)
+            Iosevka原版和改版对比：
+            ![Iosevka_diff](https://github.com/georgealbert/MyNerdFonts/blob/main/screenshots/character.png)
 
             ${{ env.release_body }}
 
