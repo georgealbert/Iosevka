@@ -15,7 +15,7 @@ env:
   FUSION_COPYRIGHT: Copyright 2025 Albert (${{ github.server_url }}/${{ github.repository }})
   FUSION_LICENSE: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
   IOSEVKA_COPYRIGHT: Copyright 2015-2025, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).
-  FUSION_VERSION: LXGW v1.521; Iosevka 33.3.5; ttfautohint (v1.8.4); Nerd Fonts 3.4.0
+  FUSION_VERSION: LXGW v1.521; Iosevka 33.3.6; ttfautohint (v1.8.4); Nerd Fonts 3.4.0
   LXGW_COPYRIGHT: Copyright 2021-2024 LXGW (https://github.com/lxgw/LxgwWenKai-Lite) Copyright 2020 The Klee Project Authors (https://github.com/fontworks-fonts/Klee)
   LXGW_WENKAI_LITE: https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.521/LXGWWenKaiMonoLite-Regular.ttf
 
@@ -70,19 +70,6 @@ jobs:
         run: |
           wget -q ${LXGW_WENKAI_LITE}
 
-      - name: Download Warcarft-Font-Merger
-        run: |
-          # wget -q https://github.com/nowar-fonts/Warcraft-Font-Merger/releases/download/v1.1.0/WarFontMerger-XS-1.1.0-linux-amd64.tar.xz
-          # tar -xvf WarFontMerger-XS-1.1.0-linux-amd64.tar.xz
-
-      - name: Merge font by WarFontMerger
-        run: |
-          # 字体合并补全工具-压缩字库-1.1.0-linux-amd64/otfccdump IosevkaTermSS05NerdFontMono-Regular.ttf -o base.otd
-          # 字体合并补全工具-压缩字库-1.1.0-linux-amd64/otfccdump LXGWWenKaiMonoLite-Regular.ttf -o cjk.otd
-          # 字体合并补全工具-压缩字库-1.1.0-linux-amd64/merge-otd base.otd cjk.otd
-          # 字体合并补全工具-压缩字库-1.1.0-linux-amd64/otfccbuild base.otd -O2 -o IosevkaTermSS05NFM+LXGWWenKaiMonoLite-Regular.ttf
-          # rm *.otd
-
       - name: Download width.py & fuse_fonts.ff
         run: |
           wget -q https://github.com/georgealbert/MyNerdFonts/raw/refs/heads/main/width.py
@@ -103,20 +90,12 @@ jobs:
 
       - name: Set tag name env
         run: |
-          # TAG_NAME=${{ github.ref }}
-          # echo "TAG_NAME=${TAG_NAME#refs/tags/}" >> $GITHUB_ENV
           echo "NOW=v$(TZ='Asia/Shanghai' date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
 
       - name: Fix Iosevka and merged font
         run: |
           # Fix Iosevka font agvCharWidth.
           python width.py -f 520 IosevkaTermSS05NerdFontMono-Regular.ttf -l -200 -n 30
-
-          # Fix merged font.
-          # python width.py -m ${FILE_MERGED_WFM}-Regular.ttf -o 1000 -t 1040 > /dev/null
-          # python width.py -m ${FILE_MERGED_WFM}-Regular-w1040.ttf -o 500 -t 520 > /dev/null
-          # mv ${FILE_MERGED_WFM}-Regular-w1040-w520.ttf ${FILE_MERGED_WFM}-Regular.ttf
-          # python width.py -f 520 ${FILE_MERGED_WFM}-Regular.ttf -l -200 -n 30 -a 1040
 
           for STYLE in "Regular"; do
             python width.py -m ${FUSION_ID}-${STYLE}.ttf -o 1000 -t 1040 > /dev/null
@@ -152,10 +131,6 @@ jobs:
             echo "\`\`\`" >> $GITHUB_ENV
             python width.py -c IosevkaTermSS05NerdFontMono-${STYLE}.ttf >> $GITHUB_ENV
             echo "\`\`\`" >> $GITHUB_ENV
-
-            # echo "" >> $GITHUB_ENV
-            # echo "* ${FILE_MERGED_WFM}-${STYLE}.ttf:" >> $GITHUB_ENV
-            # python width.py -c ${FILE_MERGED_WFM}-${STYLE}.ttf >> $GITHUB_ENV
 
             echo "" >> $GITHUB_ENV
             echo "* ${FUSION_ID}-${STYLE}.ttf:" >> $GITHUB_ENV
