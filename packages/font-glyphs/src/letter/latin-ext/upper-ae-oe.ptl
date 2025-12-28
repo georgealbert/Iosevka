@@ -77,7 +77,7 @@ glyph-block Letter-Latin-Upper-AE-OE : begin
 
 		local yMidLeft : top - [ArchDepthAClamped top 0 ada adb]
 
-		include : HBar.t df.leftSB eLeft ((XH * 0.75 / CAP) * top) sw
+		include : HBar.t df.leftSB eLeft (((XH * 0.75) / CAP) * top) sw
 		include : dispiro
 			widths.rhs sw
 			flat df.leftSB 0 [heading Upward]
@@ -135,7 +135,7 @@ glyph-block Letter-Latin-Upper-AE-OE : begin
 		glyph-block-import Letter-Latin-Upper-R : RevRShape RConfig RBarPos
 
 		foreach { suffix { legShape fOpen fTailed {slabs revSlabs doLegSlab} } } [Object.entries RConfig] : begin
-			local fSlabBot : slabs && slabs !== PShape.SlabMotion
+			define fSlabBot : slabs && slabs !== PShape.SlabMotion
 
 			if [not fTailed] : begin
 				create-glyph "cyrl/YaIe/YaHalf.\(suffix)" : glyph-proc
