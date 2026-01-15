@@ -91,8 +91,8 @@ hintParams = ["-a", "qqq"]
 
     [buildPlans.Pragmasevka.weights.Regular]
     shape = 425
-    menu = 425
-    css = 425
+    menu = 400
+    css = 400
 
     # [buildPlans.Pragmasevka.weights.semibold]
     # shape = 600
