@@ -56,7 +56,7 @@ shape = 520
 menu = 5
 css = "normal"
 
-[buildPlans.pragmasevka]
+[buildPlans.Pragmasevka]
 family = "Pragmasevka"
 spacing = "term"
 serifs = "sans"
@@ -66,16 +66,16 @@ buildTextureFeature = true
 
 hintParams = ["-a", "qqq"]
 
-    [buildPlans.pragmasevka.widths.Normal]
+    [buildPlans.Pragmasevka.widths.Normal]
     shape = 520
     menu  = 5
     css   = "normal"
 
-    [buildPlans.pragmasevka.metricOverride]
+    [buildPlans.Pragmasevka.metricOverride]
     leading = 1130
     xHeight = 550
 
-    [buildPlans.pragmasevka.ligations]
+    [buildPlans.Pragmasevka.ligations]
     inherits="default-calt"
     enables = [
         "eqslasheq",
@@ -86,29 +86,29 @@ hintParams = ["-a", "qqq"]
     ]
     disables = ["slash-asterisk"]
 
-    [buildPlans.pragmasevka.variants]
+    [buildPlans.Pragmasevka.variants]
     inherits = "ss08"
 
-    [buildPlans.pragmasevka.weights.Regular]
+    [buildPlans.Pragmasevka.weights.Regular]
     shape = 425
     menu = 450
     css = 450
 
-    # [buildPlans.pragmasevka.weights.semibold]
+    # [buildPlans.Pragmasevka.weights.semibold]
     # shape = 600
     # menu = 600
     # css = 600
     
-    # [buildPlans.pragmasevka.weights.bold]
+    # [buildPlans.Pragmasevka.weights.bold]
     # shape = 800
     # menu = 700
     # css = 700
 
-    # [buildPlans.pragmasevka.weights.black]
+    # [buildPlans.Pragmasevka.weights.black]
     # shape = 900
     # menu = 900
     # css = 900
 
-    # [buildPlans.pragmasevka.slopes]
+    # [buildPlans.Pragmasevka.slopes]
     # upright = "default.Upright"
     # italic = "default.Italic"

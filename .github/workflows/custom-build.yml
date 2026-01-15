@@ -19,7 +19,7 @@ env:
   LXGW_WENKAI_LITE: https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.521/LXGWWenKaiMonoLite-Regular.ttf
   PRAGMA_NAME: Pragmasevka Nerd Font Mono + LXGW WenKai Mono Lite
   PRAGMA_ID: PragmasevkaNFM+LXGWMonoLite
-  PRAGMA: pragmasevka
+  PRAGMA: Pragmasevka
 
 jobs:
   build:
