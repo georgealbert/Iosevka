@@ -55,3 +55,60 @@ css = 450
 shape = 520
 menu = 5
 css = "normal"
+
+[buildPlans.pragmasevka]
+family = "Pragmasevka"
+spacing = "term"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = true
+buildTextureFeature = true
+
+hintParams = ["-a", "qqq"]
+
+    [buildPlans.pragmasevka.widths.Normal]
+    shape = 520
+    menu  = 5
+    css   = "normal"
+
+    [buildPlans.pragmasevka.metricOverride]
+    leading = 1130
+    xHeight = 550
+
+    [buildPlans.pragmasevka.ligations]
+    inherits="default-calt"
+    enables = [
+        "eqslasheq",
+        "kern-dotty",
+        "kern-bars",
+        "llggeq",
+        "--fast-chaining--"
+    ]
+    disables = ["slash-asterisk"]
+
+    [buildPlans.pragmasevka.variants]
+    inherits = "ss08"
+
+    [buildPlans.pragmasevka.weights.Regular]
+    shape = 425
+    menu = 450
+    css = 450
+
+    # [buildPlans.pragmasevka.weights.semibold]
+    # shape = 600
+    # menu = 600
+    # css = 600
+    
+    # [buildPlans.pragmasevka.weights.bold]
+    # shape = 800
+    # menu = 700
+    # css = 700
+
+    # [buildPlans.pragmasevka.weights.black]
+    # shape = 900
+    # menu = 900
+    # css = 900
+
+    # [buildPlans.pragmasevka.slopes]
+    # upright = "default.Upright"
+    # italic = "default.Italic"
