@@ -1,4 +1,4 @@
-[buildPlans.IosevkaTermSs05]
+[buildPlans.IosevkaTermSS05]
 family = "IosevkaTermSS05"
 spacing = "term"
 serifs = "sans"
@@ -6,10 +6,10 @@ noCvSs = true
 exportGlyphNames = true
 buildTextureFeature = true
 
-  [buildPlans.IosevkaTermSs05.variants]
+  [buildPlans.IosevkaTermSS05.variants]
   inherits = "ss05"
 
-    [buildPlans.IosevkaTermSs05.metricOverride]
+    [buildPlans.IosevkaTermSS05.metricOverride]
     # 1150 显示52行
     # leading = 1150
     # 1130显示55行
@@ -22,7 +22,7 @@ buildTextureFeature = true
     # sb默认为60，调整到58后，字符显得挤了点
     # sb = 59
 
-    [buildPlans.IosevkaTermSs05.variants.design]
+    [buildPlans.IosevkaTermSS05.variants.design]
     one = "no-base"
     four = "closed-serifless"
     six = "straight-bar"
@@ -41,16 +41,16 @@ buildTextureFeature = true
     ampersand = "closed"
     at = "fourfold"
 
-  [buildPlans.IosevkaTermSs05.ligations]
+  [buildPlans.IosevkaTermSS05.ligations]
   inherits = "dlig"
 
-[buildPlans.IosevkaTermSs05.weights.Regular]
+[buildPlans.IosevkaTermSS05.weights.Regular]
 # 改为Retina的450看看。400 -> 450
 shape = 450
 menu = 450
 css = 450
 
-[buildPlans.IosevkaTermSs05.widths.Normal]
+[buildPlans.IosevkaTermSS05.widths.Normal]
 # 默认宽度shape = 500
 shape = 520
 menu = 5
@@ -91,8 +91,8 @@ hintParams = ["-a", "qqq"]
 
     [buildPlans.Pragmasevka.weights.Regular]
     shape = 425
-    menu = 450
-    css = 450
+    menu = 425
+    css = 425
 
     # [buildPlans.Pragmasevka.weights.semibold]
     # shape = 600
