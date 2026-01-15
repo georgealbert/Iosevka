@@ -62,7 +62,7 @@ jobs:
         run: |
           npm install
           npm run build -- ttf::${{ matrix.fontName }}
-          npm run build -- ttf::pragmasevka
+          npm run build -- ttf::${PRAGMA}
 
       - name: Patch Iosevka
         run: |
