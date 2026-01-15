@@ -7,7 +7,6 @@ on:
   workflow_dispatch: # 允许手动触发该工作流
 
 env:
-  FILE_MERGED_WFM: IosevkaTermSS05NFM+LXGWWenKaiMonoLite
   FUSION_NAME: IosevkaTermSS05 Nerd Font Mono + LXGW WenKai Mono Lite
   FUSION_ID: IosevkaTermSS05NFM+LXGWWenKaiMonoLite
   FUSION_DEVELOPER: Albert
@@ -18,6 +17,9 @@ env:
   FUSION_VERSION: LXGW v1.521; Iosevka 33.3.6; ttfautohint (v1.8.4); Nerd Fonts 3.4.0
   LXGW_COPYRIGHT: Copyright 2021-2024 LXGW (https://github.com/lxgw/LxgwWenKai-Lite) Copyright 2020 The Klee Project Authors (https://github.com/fontworks-fonts/Klee)
   LXGW_WENKAI_LITE: https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.521/LXGWWenKaiMonoLite-Regular.ttf
+  PRAGMA_NAME: Pragmasevka Nerd Font Mono + LXGW WenKai Mono Lite
+  PRAGMA_ID: PragmasevkaNFM+LXGWMonoLite
+  PRAGMA: pragmasevka
 
 jobs:
   build:
@@ -60,11 +62,14 @@ jobs:
         run: |
           npm install
           npm run build -- ttf::${{ matrix.fontName }}
+          npm run build -- ttf::pragmasevka
 
       - name: Patch Iosevka
         run: |
           ./font-patcher --quiet --adjust-line-height --complete --careful -s iosevka/dist/IosevkaTermSs05/TTF/IosevkaTermSs05-Regular.ttf
           ./font-patcher --quiet --adjust-line-height --complete --careful -s iosevka/dist/IosevkaTermSs05/TTF/IosevkaTermSs05-Italic.ttf
+          ./font-patcher --quiet --adjust-line-height --complete --careful -s iosevka/dist/${{ PRAGMA }}/TTF/${{ PRAGMA }}-Regular.ttf
+          ./font-patcher --quiet --adjust-line-height --complete --careful -s iosevka/dist/${{ PRAGMA }}/TTF/${{ PRAGMA }}-Italic.ttf
 
       - name: Download LXGWWenKaiMonoLite
         run: |
@@ -86,6 +91,15 @@ jobs:
               "$FUSION_NAME $STYLE" \
               "$STYLE" \
               "$FUSION_ID-${STYLE}.ttf"
+
+            fontforge "fuse_fonts.ff" \
+              "LXGWWenKaiMonoLite-${STYLE}.ttf" \
+              "${{ PRAGMA }}NerdFontMono-${STYLE}.ttf" \
+              "$PRAGMA_ID-$STYLE" \
+              "$PRAGMA_NAME" \
+              "$PRAGMA_NAME $STYLE" \
+              "$STYLE" \
+              "$PRAGMA_ID-${STYLE}.ttf"
           done
 
       - name: Set tag name env
@@ -96,6 +110,7 @@ jobs:
         run: |
           # Fix Iosevka font agvCharWidth.
           python width.py -f 520 IosevkaTermSS05NerdFontMono-Regular.ttf -l -200 -n 30
+          python width.py -f 520 ${{ PRAGMA }}NerdFontMono-Regular.ttf -l -200 -n 30
 
           for STYLE in "Regular"; do
             python width.py -m ${FUSION_ID}-${STYLE}.ttf -o 1000 -t 1040 > /dev/null
@@ -116,6 +131,27 @@ jobs:
               --urllicense "https://openfontlicense.org"
             mv "${FUSION_ID}-${STYLE}.ttf.fix" "${FUSION_ID}-${STYLE}.ttf"
           done
+
+          for STYLE in "Regular"; do
+            python width.py -m ${PRAGMA_ID}-${STYLE}.ttf -o 1000 -t 1040 > /dev/null
+            python width.py -m ${PRAGMA_ID}-${STYLE}-w1040.ttf -o 500 -t 520 > /dev/null
+            mv ${PRAGMA_ID}-${STYLE}-w1040-w520.ttf ${PRAGMA_ID}-${STYLE}.ttf
+            python width.py -f 520 ${PRAGMA_ID}-${STYLE}.ttf -l -200 -n 30 -a 1040
+
+            gftools update-nameids "${PRAGMA_ID}-${STYLE}.ttf" \
+              --uniqueid "$PRAGMA_ID-$STYLE-$NOW" \
+              --designer "$FUSION_DEVELOPER" \
+              --manufacturer "$FUSION_DEVELOPER" \
+              --trademark "$PRAGMA_NAME" \
+              --version "$NOW; $FUSION_VERSION" \
+              --copyright "$(echo -e "$IOSEVKA_COPYRIGHT\n$LXGW_COPYRIGHT\n$FUSION_COPYRIGHT")" \
+              --license "$FUSION_LICENSE" \
+              --urlvendor "https://github.com/georgealbert/Iosevka" \
+              --urldesigner "https://www.albertzhou.net" \
+              --urllicense "https://openfontlicense.org"
+            mv "${PRAGMA_ID}-${STYLE}.ttf.fix" "${PRAGMA_ID}-${STYLE}.ttf"
+          done
+
 
       - name: Generate artifact info
         run: |
@@ -138,6 +174,22 @@ jobs:
             python width.py -c ${FUSION_ID}-${STYLE}.ttf >> $GITHUB_ENV
             echo "\`\`\`" >> $GITHUB_ENV
           done
+
+          for STYLE in "Regular"; do
+            echo "" >> $GITHUB_ENV
+            echo "# Font Info:" >> $GITHUB_ENV
+            echo "* ${PRAGMA}NerdFontMono-${STYLE}.ttf:" >> $GITHUB_ENV
+            echo "\`\`\`" >> $GITHUB_ENV
+            python width.py -c ${PRAGMA}NerdFontMono-${STYLE}.ttf >> $GITHUB_ENV
+            echo "\`\`\`" >> $GITHUB_ENV
+
+            echo "" >> $GITHUB_ENV
+            echo "* ${PRAGMA_ID}-${STYLE}.ttf:" >> $GITHUB_ENV
+            echo "\`\`\`" >> $GITHUB_ENV
+            python width.py -c ${PRAGMA_ID}-${STYLE}.ttf >> $GITHUB_ENV
+            echo "\`\`\`" >> $GITHUB_ENV
+          done
+
 
           echo 'EOF' >> $GITHUB_ENV
 
@@ -178,4 +230,6 @@ jobs:
             iosevka/dist/IosevkaTermSs05/TTF/IosevkaTermSs05-Italic.ttf
             IosevkaTermSS05NerdFontMono-Regular.ttf
             IosevkaTermSS05NerdFontMono-Italic.ttf
+            ${{ env.PRAGMA }}NerdFontMono-Regular.ttf
             ${{ env.FUSION_ID }}-Regular.ttf
+            ${{ env.PRAGMA_ID }}-Regular.ttf
