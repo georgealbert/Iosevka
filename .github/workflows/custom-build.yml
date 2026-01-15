@@ -68,8 +68,8 @@ jobs:
         run: |
           ./font-patcher --quiet --adjust-line-height --complete --careful -s iosevka/dist/IosevkaTermSs05/TTF/IosevkaTermSs05-Regular.ttf
           ./font-patcher --quiet --adjust-line-height --complete --careful -s iosevka/dist/IosevkaTermSs05/TTF/IosevkaTermSs05-Italic.ttf
-          ./font-patcher --quiet --adjust-line-height --complete --careful -s iosevka/dist/${{ PRAGMA }}/TTF/${{ PRAGMA }}-Regular.ttf
-          ./font-patcher --quiet --adjust-line-height --complete --careful -s iosevka/dist/${{ PRAGMA }}/TTF/${{ PRAGMA }}-Italic.ttf
+          ./font-patcher --quiet --adjust-line-height --complete --careful -s iosevka/dist/${PRAGMA}/TTF/${PRAGMA}-Regular.ttf
+          ./font-patcher --quiet --adjust-line-height --complete --careful -s iosevka/dist/${PRAGMA}/TTF/${PRAGMA}-Italic.ttf
 
       - name: Download LXGWWenKaiMonoLite
         run: |
@@ -94,7 +94,7 @@ jobs:
 
             fontforge "fuse_fonts.ff" \
               "LXGWWenKaiMonoLite-${STYLE}.ttf" \
-              "${{ PRAGMA }}NerdFontMono-${STYLE}.ttf" \
+              "${PRAGMA}NerdFontMono-${STYLE}.ttf" \
               "$PRAGMA_ID-$STYLE" \
               "$PRAGMA_NAME" \
               "$PRAGMA_NAME $STYLE" \
@@ -110,7 +110,7 @@ jobs:
         run: |
           # Fix Iosevka font agvCharWidth.
           python width.py -f 520 IosevkaTermSS05NerdFontMono-Regular.ttf -l -200 -n 30
-          python width.py -f 520 ${{ PRAGMA }}NerdFontMono-Regular.ttf -l -200 -n 30
+          python width.py -f 520 ${PRAGMA}NerdFontMono-Regular.ttf -l -200 -n 30
 
           for STYLE in "Regular"; do
             python width.py -m ${FUSION_ID}-${STYLE}.ttf -o 1000 -t 1040 > /dev/null
