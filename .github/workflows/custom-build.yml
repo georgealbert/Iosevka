@@ -14,7 +14,7 @@ env:
   FUSION_COPYRIGHT: Copyright 2025 Albert (${{ github.server_url }}/${{ github.repository }})
   FUSION_LICENSE: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
   IOSEVKA_COPYRIGHT: Copyright 2015-2025, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).
-  FUSION_VERSION: LXGW v1.521; Iosevka 33.3.6; ttfautohint (v1.8.4); Nerd Fonts 3.4.0
+  FUSION_VERSION: LXGW v1.521; Iosevka 34.1.0; ttfautohint (v1.8.4); Nerd Fonts 3.4.0
   LXGW_COPYRIGHT: Copyright 2021-2024 LXGW (https://github.com/lxgw/LxgwWenKai-Lite) Copyright 2020 The Klee Project Authors (https://github.com/fontworks-fonts/Klee)
   LXGW_WENKAI_LITE: https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.521/LXGWWenKaiMonoLite-Regular.ttf
   PRAGMA_NAME: Pragmasevka Nerd Font Mono + LXGW WenKai Mono Lite
@@ -180,7 +180,7 @@ jobs:
 
           for STYLE in "Regular"; do
             echo "" >> $GITHUB_ENV
-            echo "# Font Info:" >> $GITHUB_ENV
+            # echo "# Font Info:" >> $GITHUB_ENV
             echo "* ${PRAGMA}NerdFontMono-${STYLE}.ttf:" >> $GITHUB_ENV
             echo "\`\`\`" >> $GITHUB_ENV
             python width.py -c ${PRAGMA}NerdFontMono-${STYLE}.ttf >> $GITHUB_ENV
