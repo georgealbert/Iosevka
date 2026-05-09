@@ -1150,7 +1150,7 @@
 <td colspan="9"> </td>
 </tr>
 <tr>
-<td rowspan="4"><code>cv36</code></td>
+<td rowspan="6"><code>cv36</code></td>
 <td><img src="../images/cv-a-double-storey-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-serifless.dark.svg#gh-dark-mode-only" width=32/></td>
 <td><img src="../images/cv-a-double-storey-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
 <td><img src="../images/cv-a-double-storey-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-tailed.dark.svg#gh-dark-mode-only" width=32/></td>
@@ -1205,6 +1205,20 @@
 <td>22</td>
 <td>23</td>
 <td>24</td>
+</tr>
+<tr>
+<td><img src="../images/cv-a-double-storey-flat-bottom-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-flat-bottom-serifless.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-a-double-storey-flat-bottom-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-flat-bottom-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-a-double-storey-hook-inward-serifed-flat-bottom-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-hook-inward-serifed-flat-bottom-serifless.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-a-double-storey-hook-inward-serifed-flat-bottom-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-hook-inward-serifed-flat-bottom-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td colspan="8"> </td>
+</tr>
+<tr>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+<td colspan="8"> </td>
 </tr>
 <tr>
 <td rowspan="2"><code>cv37</code></td>
@@ -3165,7 +3179,7 @@
 <td colspan="9"> </td>
 </tr>
 <tr>
-<td rowspan="4"><code>cv87</code></td>
+<td rowspan="6"><code>cv87</code></td>
 <td><img src="../images/cv-cyrl-a-double-storey-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-serifless.dark.svg#gh-dark-mode-only" width=32/></td>
 <td><img src="../images/cv-cyrl-a-double-storey-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
 <td><img src="../images/cv-cyrl-a-double-storey-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-tailed.dark.svg#gh-dark-mode-only" width=32/></td>
@@ -3220,6 +3234,20 @@
 <td>22</td>
 <td>23</td>
 <td>24</td>
+</tr>
+<tr>
+<td><img src="../images/cv-cyrl-a-double-storey-flat-bottom-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-flat-bottom-serifless.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-a-double-storey-flat-bottom-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-flat-bottom-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-a-double-storey-hook-inward-serifed-flat-bottom-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-hook-inward-serifed-flat-bottom-serifless.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-a-double-storey-hook-inward-serifed-flat-bottom-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-hook-inward-serifed-flat-bottom-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td colspan="8"> </td>
+</tr>
+<tr>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+<td colspan="8"> </td>
 </tr>
 <tr>
 <td rowspan="4"><code>cv88</code></td>
@@ -3886,7 +3914,12 @@
 <td><img src="../images/cv-cyrl-capital-ya-standing-open-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-standing-open-serifless.dark.svg#gh-dark-mode-only" width=32/></td>
 <td><img src="../images/cv-cyrl-capital-ya-standing-open-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-standing-open-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
 <td><img src="../images/cv-cyrl-capital-ya-standing-open-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-standing-open-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
-<td colspan="6"> </td>
+<td><img src="../images/cv-cyrl-capital-ya-straight-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-straight-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-capital-ya-straight-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-straight-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-capital-ya-curly-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-curly-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-capital-ya-curly-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-curly-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-capital-ya-standing-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-standing-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-capital-ya-standing-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-standing-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
 </tr>
 <tr>
 <td>13</td>
@@ -3895,10 +3928,15 @@
 <td>16</td>
 <td>17</td>
 <td>18</td>
-<td colspan="6"> </td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
 </tr>
 <tr>
-<td rowspan="6"><code>VAAK</code></td>
+<td rowspan="8"><code>VAAK</code></td>
 <td><img src="../images/cv-cyrl-ya-straight-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-serifless.dark.svg#gh-dark-mode-only" width=32/></td>
 <td><img src="../images/cv-cyrl-ya-straight-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
 <td><img src="../images/cv-cyrl-ya-straight-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
@@ -3981,6 +4019,24 @@
 <td>34</td>
 <td>35</td>
 <td>36</td>
+</tr>
+<tr>
+<td><img src="../images/cv-cyrl-ya-straight-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-ya-straight-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-ya-curly-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-curly-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-ya-curly-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-curly-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-ya-standing-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-standing-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td><img src="../images/cv-cyrl-ya-standing-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-standing-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td>
+<td colspan="6"> </td>
+</tr>
+<tr>
+<td>37</td>
+<td>38</td>
+<td>39</td>
+<td>40</td>
+<td>41</td>
+<td>42</td>
+<td colspan="6"> </td>
 </tr>
 <tr>
 <td rowspan="2"><code>VDAA</code></td>
