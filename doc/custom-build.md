@@ -1265,7 +1265,7 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td><code>Z</code> with cursive body shape, and a horizontal crossbar</td></tr>
     </table></details>
   - Styles for `a`
-    <details><summary>24 variants</summary>
+    <details><summary>28 variants</summary>
     <table>
     <tr><td rowspan="2" width="60"><img src="../images/cv-a-double-storey-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-serifless.dark.svg#gh-dark-mode-only" width=32/></td><td><code>a = 'double-storey-serifless'</code>, <code>cv36 = 1</code></td></tr>
     <tr><td><code>a</code> with double-storey body, and serifless hook; without serif at terminal (default for Sans Upright)</td></tr>
@@ -1315,6 +1315,14 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td><code>a</code> with single-storey body, earless (rounded top-right), and serif at terminal</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-a-single-storey-earless-rounded-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-single-storey-earless-rounded-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>a = 'single-storey-earless-rounded-tailed'</code>, <code>cv36 = 24</code></td></tr>
     <tr><td><code>a</code> with single-storey body, earless (rounded top-right), and curly tail</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-a-double-storey-flat-bottom-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-flat-bottom-serifless.dark.svg#gh-dark-mode-only" width=32/></td><td><code>a = 'double-storey-flat-bottom-serifless'</code>, <code>cv36 = 25</code></td></tr>
+    <tr><td><code>a</code> with double-storey body, serifless hook, and flat bottom; without serif at terminal</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-a-double-storey-flat-bottom-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-flat-bottom-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>a = 'double-storey-flat-bottom-serifed'</code>, <code>cv36 = 26</code></td></tr>
+    <tr><td><code>a</code> with double-storey body, serifless hook, and flat bottom; with serif at terminal</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-a-double-storey-hook-inward-serifed-flat-bottom-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-hook-inward-serifed-flat-bottom-serifless.dark.svg#gh-dark-mode-only" width=32/></td><td><code>a = 'double-storey-hook-inward-serifed-flat-bottom-serifless'</code>, <code>cv36 = 27</code></td></tr>
+    <tr><td><code>a</code> with double-storey body, serifed hook, and flat bottom; without serif at terminal</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-a-double-storey-hook-inward-serifed-flat-bottom-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-a-double-storey-hook-inward-serifed-flat-bottom-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>a = 'double-storey-hook-inward-serifed-flat-bottom-serifed'</code>, <code>cv36 = 28</code></td></tr>
+    <tr><td><code>a</code> with double-storey body, serifed hook, and flat bottom; with serif at terminal</td></tr>
     </table></details>
   - Styles for `b`
     <details><summary>9 variants</summary>
@@ -2985,7 +2993,7 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td>Partial derivative symbol (<code>∂</code>) with a full hook</td></tr>
     </table></details>
   - Styles for `а` (Cyrillic Lower A)
-    <details><summary>24 variants</summary>
+    <details><summary>28 variants</summary>
     <table>
     <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-a-double-storey-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-serifless.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-a = 'double-storey-serifless'</code>, <code>cv87 = 1</code></td></tr>
     <tr><td>Cyrillic Lower A (<code>а</code>) with double-storey body, and serifless hook; without serif at terminal (default for Sans Upright)</td></tr>
@@ -3035,6 +3043,14 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td>Cyrillic Lower A (<code>а</code>) with single-storey body, earless (rounded top-right), and serif at terminal</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-a-single-storey-earless-rounded-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-single-storey-earless-rounded-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-a = 'single-storey-earless-rounded-tailed'</code>, <code>cv87 = 24</code></td></tr>
     <tr><td>Cyrillic Lower A (<code>а</code>) with single-storey body, earless (rounded top-right), and curly tail</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-a-double-storey-flat-bottom-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-flat-bottom-serifless.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-a = 'double-storey-flat-bottom-serifless'</code>, <code>cv87 = 25</code></td></tr>
+    <tr><td>Cyrillic Lower A (<code>а</code>) with double-storey body, serifless hook, and flat bottom; without serif at terminal</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-a-double-storey-flat-bottom-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-flat-bottom-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-a = 'double-storey-flat-bottom-serifed'</code>, <code>cv87 = 26</code></td></tr>
+    <tr><td>Cyrillic Lower A (<code>а</code>) with double-storey body, serifless hook, and flat bottom; with serif at terminal</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-a-double-storey-hook-inward-serifed-flat-bottom-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-hook-inward-serifed-flat-bottom-serifless.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-a = 'double-storey-hook-inward-serifed-flat-bottom-serifless'</code>, <code>cv87 = 27</code></td></tr>
+    <tr><td>Cyrillic Lower A (<code>а</code>) with double-storey body, serifed hook, and flat bottom; without serif at terminal</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-a-double-storey-hook-inward-serifed-flat-bottom-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-a-double-storey-hook-inward-serifed-flat-bottom-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-a = 'double-storey-hook-inward-serifed-flat-bottom-serifed'</code>, <code>cv87 = 28</code></td></tr>
+    <tr><td>Cyrillic Lower A (<code>а</code>) with double-storey body, serifed hook, and flat bottom; with serif at terminal</td></tr>
     </table></details>
   - Styles for `в` (Cyrillic Lower Ve)
     <details><summary>14 variants</summary>
@@ -3565,7 +3581,7 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td>Cyrillic Lower E (<code>э</code>) with inward serif at both top, bottom and center</td></tr>
     </table></details>
   - Styles for `Я` (Cyrillic Capital Ya)
-    <details><summary>18 variants</summary>
+    <details><summary>24 variants</summary>
     <table>
     <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-capital-ya-straight-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-straight-serifless.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-capital-ya = 'straight-serifless'</code>, <code>VAAJ = 1</code></td></tr>
     <tr><td>Cyrillic Capital Ya (<code>Я</code>) with straight leg; without serifs (default for Sans)</td></tr>
@@ -3603,16 +3619,28 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td>Cyrillic Capital Ya (<code>Я</code>) with standing leg (like Helvetica), open contour, and motion serifs at bottom-left</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-capital-ya-standing-open-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-standing-open-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-capital-ya = 'standing-open-serifed'</code>, <code>VAAJ = 18</code></td></tr>
     <tr><td>Cyrillic Capital Ya (<code>Я</code>) with standing leg (like Helvetica), open contour, and serifs</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-capital-ya-straight-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-straight-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-capital-ya = 'straight-bilateral-motion-serifed'</code>, <code>VAAJ = 19</code></td></tr>
+    <tr><td>Cyrillic Capital Ya (<code>Я</code>) with straight leg, and motion serifs at bottom-left and bottom-right</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-capital-ya-straight-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-straight-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-capital-ya = 'straight-open-bilateral-motion-serifed'</code>, <code>VAAJ = 20</code></td></tr>
+    <tr><td>Cyrillic Capital Ya (<code>Я</code>) with straight leg, open contour, and motion serifs at bottom-left and bottom-right</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-capital-ya-curly-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-curly-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-capital-ya = 'curly-bilateral-motion-serifed'</code>, <code>VAAJ = 21</code></td></tr>
+    <tr><td>Cyrillic Capital Ya (<code>Я</code>) with curly leg, and motion serifs at bottom-left and bottom-right</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-capital-ya-curly-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-curly-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-capital-ya = 'curly-open-bilateral-motion-serifed'</code>, <code>VAAJ = 22</code></td></tr>
+    <tr><td>Cyrillic Capital Ya (<code>Я</code>) with curly leg, open contour, and motion serifs at bottom-left and bottom-right</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-capital-ya-standing-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-standing-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-capital-ya = 'standing-bilateral-motion-serifed'</code>, <code>VAAJ = 23</code></td></tr>
+    <tr><td>Cyrillic Capital Ya (<code>Я</code>) with standing leg (like Helvetica), and motion serifs at bottom-left and bottom-right</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-capital-ya-standing-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-capital-ya-standing-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-capital-ya = 'standing-open-bilateral-motion-serifed'</code>, <code>VAAJ = 24</code></td></tr>
+    <tr><td>Cyrillic Capital Ya (<code>Я</code>) with standing leg (like Helvetica), open contour, and motion serifs at bottom-left and bottom-right</td></tr>
     </table></details>
   - Styles for `я` (Cyrillic Lower Ya)
-    <details><summary>36 variants</summary>
+    <details><summary>42 variants</summary>
     <table>
     <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-straight-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-serifless.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'straight-serifless'</code>, <code>VAAK = 1</code></td></tr>
     <tr><td>Cyrillic Lower Ya (<code>я</code>) with straight leg; without serifs (default for Sans)</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-straight-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'straight-motion-serifed'</code>, <code>VAAK = 2</code></td></tr>
     <tr><td>Cyrillic Lower Ya (<code>я</code>) with straight leg, and motion serifs at bottom-left</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-straight-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'straight-serifed'</code>, <code>VAAK = 3</code></td></tr>
-    <tr><td>Cyrillic Lower Ya (<code>я</code>) with straight leg, and serifs (default for Slab)</td></tr>
+    <tr><td>Cyrillic Lower Ya (<code>я</code>) with straight leg, and serifs (default for Slab Upright)</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-straight-tailed-serifless.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-tailed-serifless.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'straight-tailed-serifless'</code>, <code>VAAK = 4</code></td></tr>
     <tr><td>Cyrillic Lower Ya (<code>я</code>) with straight leg, and tail; without serifs</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-straight-tailed-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-tailed-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'straight-tailed-motion-serifed'</code>, <code>VAAK = 5</code></td></tr>
@@ -3679,6 +3707,18 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td>Cyrillic Lower Ya (<code>я</code>) with standing leg (like Helvetica), open contour, tail, and motion serifs at bottom-left</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-standing-open-tailed-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-standing-open-tailed-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'standing-open-tailed-serifed'</code>, <code>VAAK = 36</code></td></tr>
     <tr><td>Cyrillic Lower Ya (<code>я</code>) with standing leg (like Helvetica), open contour, tail, and serifs</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-straight-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'straight-bilateral-motion-serifed'</code>, <code>VAAK = 37</code></td></tr>
+    <tr><td>Cyrillic Lower Ya (<code>я</code>) with straight leg, and motion serifs at bottom-left and bottom-right (default for Slab Italic)</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-straight-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-straight-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'straight-open-bilateral-motion-serifed'</code>, <code>VAAK = 38</code></td></tr>
+    <tr><td>Cyrillic Lower Ya (<code>я</code>) with straight leg, open contour, and motion serifs at bottom-left and bottom-right</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-curly-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-curly-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'curly-bilateral-motion-serifed'</code>, <code>VAAK = 39</code></td></tr>
+    <tr><td>Cyrillic Lower Ya (<code>я</code>) with curly leg, and motion serifs at bottom-left and bottom-right</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-curly-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-curly-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'curly-open-bilateral-motion-serifed'</code>, <code>VAAK = 40</code></td></tr>
+    <tr><td>Cyrillic Lower Ya (<code>я</code>) with curly leg, open contour, and motion serifs at bottom-left and bottom-right</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-standing-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-standing-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'standing-bilateral-motion-serifed'</code>, <code>VAAK = 41</code></td></tr>
+    <tr><td>Cyrillic Lower Ya (<code>я</code>) with standing leg (like Helvetica), and motion serifs at bottom-left and bottom-right</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-cyrl-ya-standing-open-bilateral-motion-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-cyrl-ya-standing-open-bilateral-motion-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>cyrl-ya = 'standing-open-bilateral-motion-serifed'</code>, <code>VAAK = 42</code></td></tr>
+    <tr><td>Cyrillic Lower Ya (<code>я</code>) with standing leg (like Helvetica), open contour, and motion serifs at bottom-left and bottom-right</td></tr>
     </table></details>
   - Styles for `ij` (Dots in letters “i” and “j” in particular)
     <details><summary>2 variants</summary>
