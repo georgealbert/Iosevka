@@ -1,5 +1,12 @@
 ## Modifications since last major version
 
+### 34.6.1
+
+* Fixes broken U+2BD1 and U+1F18A (#3195).
+* Add Characters:
+  - LATIN SMALL LETTER R WITHOUT HANDLE (`U+AB47`).
+
+
 ### 34.6.0
 
 * Add `flat-top` variants for `a`/`g`/`m`/`n`/`p`/`q`/`r`/`α`/`η`/`а`/`р` (#1269) (#2519).
