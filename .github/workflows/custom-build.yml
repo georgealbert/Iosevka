@@ -200,7 +200,7 @@ jobs:
           
       - name: Publish Release
         id: publish_release
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.NOW }}
           draft: false
