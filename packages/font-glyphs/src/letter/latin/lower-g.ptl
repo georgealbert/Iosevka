@@ -16,7 +16,10 @@ glyph-block Letter-Latin-Lower-G : begin
 	define [OverlayW bw] : glyph-proc
 		define l : mix 0     SB      0.3
 		define r : mix Width RightSB 0.3
-		include : HBar.m l r currentGlyph.baseAnchors.overlay.y bw
+		include : dispiro
+			widths.center bw
+			flat l currentGlyph.baseAnchors.overlay.y
+			curl r currentGlyph.baseAnchors.overlay.y
 
 	# overlay bar width for double-storey g
 	define obwDoubleStorey : Math.min ((XH - Descender) * (1 / 6) - Stroke * (2 / 3)) : AdviceStroke 5
@@ -37,9 +40,9 @@ glyph-block Letter-Latin-Lower-G : begin
 			flat [mix SB RightSB 0.435] groundy [widths.rhs Stroke]
 			curl [mix SB RightSB 0.565] groundy
 			archv 4
-			g4 grightx [mix (Descender + O) groundy (1.06 * SmallArchDepthA / (SmallArchDepthA + SmallArchDepthB))]
+			g4 grightx [mix (Descender + O) [YSmoothMidR groundy (Descender + O) SmallArchDepthA SmallArchDepthB] 1.06]
 			Arch.rhs Descender
-			g4 gleftx  [mix (Descender + O) groundy (1.06 * SmallArchDepthB / (SmallArchDepthA + SmallArchDepthB))]
+			g4 gleftx  [mix (Descender + O) [YSmoothMidL groundy (Descender + O) SmallArchDepthA SmallArchDepthB] 1.06]
 			arcvh
 			g4 [mix SB RightSB 0.435] groundy [heading Rightward]
 		local gm : mix SB [mix Width RightSB 1.3] 0.5
@@ -70,9 +73,9 @@ glyph-block Letter-Latin-Lower-G : begin
 			flat [mix SB RightSB 0.435] groundy [widths.rhs Stroke]
 			curl [mix SB RightSB 0.565] groundy
 			archv 4
-			g4 grightx [mix (Descender + O) groundy (1.06 * SmallArchDepthA / (SmallArchDepthA + SmallArchDepthB))]
+			g4 grightx [mix (Descender + O) [YSmoothMidR groundy (Descender + O) SmallArchDepthA SmallArchDepthB] 1.06]
 			HookEnd Descender
-			g4 gleftx  [mix (Descender + O) groundy (1.06 * SmallArchDepthB / (SmallArchDepthA + SmallArchDepthB))]
+			g4 gleftx  (Descender + SHook)
 		local gm : mix SB [mix Width RightSB 1.3] 0.5
 		include : spiro-outline
 			corner ([mix Width RightSB 0.75] - OX)  XH
@@ -142,6 +145,23 @@ glyph-block Letter-Latin-Lower-G : begin
 				corner  df.rightSB                    (top - HalfStroke)
 				corner (df.rightSB - [HSwToV df.mvs]) (top - HalfStroke)
 
+		export : define [FlatTopSeriflessBody df top _ada _adb] : glyph-proc
+			local ada : fallback _ada df.smallArchDepthA
+			local adb : fallback _adb df.smallArchDepthB
+			include : OBarRight.earlessCorner
+				top    -- top
+				left   -- df.leftSB
+				right  -- df.rightSB
+				sw     -- df.mvs
+				fine   -- df.shoulderFine
+				ada    -- ada
+				adb    -- adb
+				rise   -- 0
+
+		export : define [FlatTopSerifedBody df top _ada _adb] : glyph-proc
+			include : FlatTopSeriflessBody df top _ada _adb
+			include : tagged 'serifRT' : HSerif.rt df.rightSB top SideJut df.mvs
+
 		export : define [EarlessCornerBody df top _ada _adb] : glyph-proc
 			local ada : fallback _ada df.smallArchDepthA
 			local adb : fallback _adb df.smallArchDepthB
@@ -149,8 +169,6 @@ glyph-block Letter-Latin-Lower-G : begin
 				top    -- top
 				left   -- df.leftSB
 				right  -- df.rightSB
-				rise   -- DToothlessRise
-				mBlend -- DMBlend
 				sw     -- df.mvs
 				fine   -- df.shoulderFine
 				ada    -- ada
@@ -174,12 +192,14 @@ glyph-block Letter-Latin-Lower-G : begin
 			singleStoreyBentHook    SingleStorey.BentHook
 			singleStoreyFlatHook    SingleStorey.FlatHook
 		object # ear/serif
-			serifless             { SingleStorey.SeriflessBody      0                      }
-			serifed               { SingleStorey.SerifedBody        0                      }
-			earlessCorner         { SingleStorey.EarlessCornerBody  DToothlessRise         }
-			earlessCornerHTB      { SingleStorey.EarlessCornerBody  0                      }
-			earlessRounded        { SingleStorey.EarlessRoundedBody (XH - SmallArchDepthA) }
-			topCut                { SingleStorey.TopCutBody         HalfStroke             }
+			serifless             { SingleStorey.SeriflessBody        0                      }
+			serifed               { SingleStorey.SerifedBody          0                      }
+			topCut                { SingleStorey.TopCutBody           HalfStroke             }
+			flatTopSerifless      { SingleStorey.FlatTopSeriflessBody 0                      }
+			flatTopSerifed        { SingleStorey.FlatTopSerifedBody   0                      }
+			earlessCorner         { SingleStorey.EarlessCornerBody    DToothlessRise         }
+			earlessCornerHTB      { SingleStorey.EarlessCornerBody    0                      }
+			earlessRounded        { SingleStorey.EarlessRoundedBody   (XH - SmallArchDepthA) }
 
 	foreach { suffix { hookShape {bodyShape hookStart} } } [Object.entries SingleStoreyConfig] : do
 		create-glyph "g.\(suffix)" : glyph-proc
