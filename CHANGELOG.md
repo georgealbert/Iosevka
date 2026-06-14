@@ -1,5 +1,11 @@
 ## Modifications since last major version
 
+### 34.6.3
+
+* Add Characters:
+  - SYMBOL FOR SUBSTITUTE FORM TWO (`U+2426`) (#3221).
+
+
 ### 34.6.2
 
 * Add Characters:

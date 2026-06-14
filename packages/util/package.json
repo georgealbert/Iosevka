@@ -1,6 +1,6 @@
 {
   "name": "@iosevka/util",
-  "version": "34.6.2",
+  "version": "34.6.3",
   "private": true,
   "exports": {
     ".": "./src/index.mjs",
