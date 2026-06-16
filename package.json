@@ -1,6 +1,6 @@
 {
   "name": "@iosevka/monorepo",
-  "version": "34.6.2",
+  "version": "34.6.3",
   "workspaces": [
     "packages/*",
     "tools/*"
