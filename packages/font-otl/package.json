@@ -1,13 +1,13 @@
 {
   "name": "@iosevka/font-otl",
-  "version": "34.6.3",
+  "version": "34.7.0",
   "private": true,
   "exports": {
     ".": "./lib/index.mjs"
   },
   "dependencies": {
-    "@iosevka/font-glyphs": "34.6.3",
-    "@iosevka/glyph": "34.6.3",
+    "@iosevka/font-glyphs": "34.7.0",
+    "@iosevka/glyph": "34.7.0",
     "toposort": "^2.0.2"
   }
 }
