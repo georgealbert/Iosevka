@@ -2840,7 +2840,7 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td rowspan="2" width="60"><img src="../images/cv-lower-iota-flat-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-lower-iota-flat-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>lower-iota = 'flat-tailed'</code>, <code>cv74 = 7</code></td></tr>
     <tr><td>Greek lower Iota (<code>ι</code>) with a curly-then-flat tail</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-lower-iota-serifed-flat-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-lower-iota-serifed-flat-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>lower-iota = 'serifed-flat-tailed'</code>, <code>cv74 = 8</code></td></tr>
-    <tr><td>Greek lower Iota (<code>ι</code>) with top serif and a curly-then-flat tail</td></tr>
+    <tr><td>Greek lower Iota (<code>ι</code>) with top serif and a curly-then-flat tail (default for Upright)</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-lower-iota-diagonal-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-lower-iota-diagonal-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>lower-iota = 'diagonal-tailed'</code>, <code>cv74 = 9</code></td></tr>
     <tr><td>Greek lower Iota (<code>ι</code>) with a diagonal tail</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-lower-iota-serifed-diagonal-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-lower-iota-serifed-diagonal-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>lower-iota = 'serifed-diagonal-tailed'</code>, <code>cv74 = 10</code></td></tr>
@@ -2848,7 +2848,7 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td rowspan="2" width="60"><img src="../images/cv-lower-iota-semi-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-lower-iota-semi-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>lower-iota = 'semi-tailed'</code>, <code>cv74 = 11</code></td></tr>
     <tr><td>Greek lower Iota (<code>ι</code>) with a slightly curly tail</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-lower-iota-serifed-semi-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-lower-iota-serifed-semi-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>lower-iota = 'serifed-semi-tailed'</code>, <code>cv74 = 12</code></td></tr>
-    <tr><td>Greek lower Iota (<code>ι</code>) with top serif and a slightly curly tail (default for Upright)</td></tr>
+    <tr><td>Greek lower Iota (<code>ι</code>) with top serif and a slightly curly tail</td></tr>
     </table></details>
   - Styles for `κ` (Greek lower Kappa)
     <details><summary>32 variants</summary>
@@ -3038,11 +3038,11 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td rowspan="2" width="60"><img src="../images/cv-lower-tau-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-lower-tau-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>lower-tau = 'tailed'</code>, <code>cv81 = 3</code></td></tr>
     <tr><td>Greek lower Tau (<code>τ</code>) with curly tail (default for Italic)</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-lower-tau-flat-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-lower-tau-flat-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>lower-tau = 'flat-tailed'</code>, <code>cv81 = 4</code></td></tr>
-    <tr><td>Greek lower Tau (<code>τ</code>) with a flat tail</td></tr>
+    <tr><td>Greek lower Tau (<code>τ</code>) with a flat tail (default for Upright)</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-lower-tau-diagonal-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-lower-tau-diagonal-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>lower-tau = 'diagonal-tailed'</code>, <code>cv81 = 5</code></td></tr>
     <tr><td>Greek lower Tau (<code>τ</code>) with a diagonal tail</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-lower-tau-semi-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-lower-tau-semi-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>lower-tau = 'semi-tailed'</code>, <code>cv81 = 6</code></td></tr>
-    <tr><td>Greek lower Tau (<code>τ</code>) with a slightly curly tail (default for Upright)</td></tr>
+    <tr><td>Greek lower Tau (<code>τ</code>) with a slightly curly tail</td></tr>
     </table></details>
   - Styles for `υ` (Greek lower Upsilon)
     <details><summary>4 variants</summary>
@@ -4063,24 +4063,28 @@ Subsection `variants` is used to configure character variants in the font. Prope
     <tr><td>Number sign with slanted bars, open inner, and taller than digits</td></tr>
     </table></details>
   - Styles for `&`
-    <details><summary>8 variants</summary>
+    <details><summary>10 variants</summary>
     <table>
     <tr><td rowspan="2" width="60"><img src="../images/cv-ampersand-closed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-ampersand-closed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>ampersand = 'closed'</code>, <code>VSAK = 1</code></td></tr>
-    <tr><td>Ampersand (<code>&amp;</code>) with a closed contour (default)</td></tr>
+    <tr><td>Ampersand (<code>&amp;</code>) with closed contour (default)</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-ampersand-upper-open.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-ampersand-upper-open.dark.svg#gh-dark-mode-only" width=32/></td><td><code>ampersand = 'upper-open'</code>, <code>VSAK = 2</code></td></tr>
-    <tr><td>Ampersand (<code>&amp;</code>) with an open contour at upper half</td></tr>
+    <tr><td>Ampersand (<code>&amp;</code>) with open contour at upper half</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-ampersand-lower-open.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-ampersand-lower-open.dark.svg#gh-dark-mode-only" width=32/></td><td><code>ampersand = 'lower-open'</code>, <code>VSAK = 3</code></td></tr>
-    <tr><td>Ampersand (<code>&amp;</code>) with an open contour at lower half</td></tr>
+    <tr><td>Ampersand (<code>&amp;</code>) with open contour at lower half</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-ampersand-flat-top.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-ampersand-flat-top.dark.svg#gh-dark-mode-only" width=32/></td><td><code>ampersand = 'flat-top'</code>, <code>VSAK = 4</code></td></tr>
-    <tr><td>Ampersand (<code>&amp;</code>) drawn with a flat top</td></tr>
+    <tr><td>Ampersand (<code>&amp;</code>) with flat top</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-ampersand-et-toothed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-ampersand-et-toothed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>ampersand = 'et-toothed'</code>, <code>VSAK = 5</code></td></tr>
-    <tr><td>Ampersand (<code>&amp;</code>) drawn like a ligature of Ɛ and t with tooth</td></tr>
+    <tr><td>Ampersand (<code>&amp;</code>) with body shape drawn like a ligature of <code>Ɛ</code> and <code>t</code>, and tooth</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-ampersand-et-toothless-corner.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-ampersand-et-toothless-corner.dark.svg#gh-dark-mode-only" width=32/></td><td><code>ampersand = 'et-toothless-corner'</code>, <code>VSAK = 6</code></td></tr>
-    <tr><td>Ampersand (<code>&amp;</code>) drawn like a ligature of Ɛ and t without tooth (corner)</td></tr>
+    <tr><td>Ampersand (<code>&amp;</code>) with body shape drawn like a ligature of <code>Ɛ</code> and <code>t</code>; without tooth (corner)</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-ampersand-et-toothless-rounded.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-ampersand-et-toothless-rounded.dark.svg#gh-dark-mode-only" width=32/></td><td><code>ampersand = 'et-toothless-rounded'</code>, <code>VSAK = 7</code></td></tr>
-    <tr><td>Ampersand (<code>&amp;</code>) drawn like a ligature of Ɛ and t without tooth (rounded)</td></tr>
+    <tr><td>Ampersand (<code>&amp;</code>) with body shape drawn like a ligature of <code>Ɛ</code> and <code>t</code>; without tooth (rounded)</td></tr>
     <tr><td rowspan="2" width="60"><img src="../images/cv-ampersand-et-tailed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-ampersand-et-tailed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>ampersand = 'et-tailed'</code>, <code>VSAK = 8</code></td></tr>
-    <tr><td>Ampersand (<code>&amp;</code>) drawn like a ligature of Ɛ and t with tail</td></tr>
+    <tr><td>Ampersand (<code>&amp;</code>) with body shape drawn like a ligature of <code>Ɛ</code> and <code>t</code>, and tail</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-ampersand-et-flat-bottom.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-ampersand-et-flat-bottom.dark.svg#gh-dark-mode-only" width=32/></td><td><code>ampersand = 'et-flat-bottom'</code>, <code>VSAK = 9</code></td></tr>
+    <tr><td>Ampersand (<code>&amp;</code>) with body shape drawn like a ligature of <code>Ɛ</code> and <code>t</code>, and flat bottom</td></tr>
+    <tr><td rowspan="2" width="60"><img src="../images/cv-ampersand-flat-top-serifed.light.svg#gh-light-mode-only" width=32/><img src="../images/cv-ampersand-flat-top-serifed.dark.svg#gh-dark-mode-only" width=32/></td><td><code>ampersand = 'flat-top-serifed'</code>, <code>VSAK = 10</code></td></tr>
+    <tr><td>Ampersand (<code>&amp;</code>) with flat top, and serif at top-right</td></tr>
     </table></details>
   - Styles for `@`
     <details><summary>9 variants</summary>
