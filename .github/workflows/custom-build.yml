@@ -11,11 +11,11 @@ env:
   FUSION_ID: IosevkaTermSS05NFM+LXGWWenKaiMonoLite
   FUSION_DEVELOPER: Albert
   FUSION_DESCRIPTION: "The free and open-source font fused with Iosevka and LXGW WenKai"
-  FUSION_COPYRIGHT: Copyright 2025 Albert (${{ github.server_url }}/${{ github.repository }})
+  FUSION_COPYRIGHT: Copyright 2025-2026, Albert (${{ github.server_url }}/${{ github.repository }})
   FUSION_LICENSE: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
-  IOSEVKA_COPYRIGHT: Copyright 2015-2025, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).
-  FUSION_VERSION: LXGW v1.530; Iosevka 34.9.0; ttfautohint (v1.8.4); Nerd Fonts 3.5.1
-  LXGW_COPYRIGHT: Copyright 2021-2024 LXGW (https://github.com/lxgw/LxgwWenKai-Lite) Copyright 2020 The Klee Project Authors (https://github.com/fontworks-fonts/Klee)
+  IOSEVKA_COPYRIGHT: Copyright 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).
+  FUSION_VERSION: LXGW v1.530; Iosevka 34.9.1; ttfautohint (v1.8.4); Nerd Fonts 3.5.1
+  LXGW_COPYRIGHT: Copyright 2021-2026 LXGW (https://github.com/lxgw/LxgwWenKai-Lite), with Reserved Font Name '霞鹜', '霞鶩', '落霞孤鹜', '落霞孤鶩' and 'LXGW'. Copyright 2020 The Klee Project Authors (https://github.com/fontworks-fonts/Klee)
   LXGW_WENKAI_LITE: https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.530/LXGWWenKaiMonoLite-Regular.ttf
   PRAGMA_NAME: Pragmasevka Nerd Font Mono + LXGW WenKai Mono Lite
   PRAGMA_ID: PragmasevkaNFM+LXGWMonoLite
